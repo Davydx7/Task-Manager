@@ -1,17 +1,15 @@
 import PropTypes from 'prop-types';
 import Button from './Button';
 
-
-
-const Header = ({title, onAdd, showAddState}) => {
-
-    return (
-        <header className="header">
-            <h1>{title} </h1>
-            <Button color={showAddState ? 'red' : 'green'} text={showAddState ? 'Close' : 'Add'} onClick={onAdd} />
-        </header>
-    );
-};
+const Header = ({ title, onAdd, showAddState }) => (
+  <header className="header">
+    <h1>
+      {title}
+      {' '}
+    </h1>
+    <Button color={showAddState ? 'red' : 'green'} text={showAddState ? 'Close' : 'Add'} onClick={onAdd} />
+  </header>
+);
 
 // CSS in JS
 // const defStyles = {
@@ -19,11 +17,11 @@ const Header = ({title, onAdd, showAddState}) => {
 // }
 
 Header.defaultProps = {
-    title : 'Task Tracker'
-}; 
+  title: 'Task Tracker',
+};
 
 Header.propTypes = {
-    title: PropTypes.string.isRequired,
+  title: PropTypes.string,
 };
 
 export default Header;
