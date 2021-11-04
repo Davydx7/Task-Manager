@@ -90,7 +90,7 @@ function App() {
   return (
     <Router>
       <div className="container">
-        <Header onAdd={setShow} showAddState={showAdd} />
+        <Header onClick={setShow} showAddState={showAdd} />
         <Route
           path="/"
           exact
