@@ -2,4 +2,4 @@
 
 Front-end using CRA
 
-Check out the project [here 💙](https://github.com/facebook/create-react-app).
+Check out the project [here 💙](https://david-task-app.netlify.app/).
